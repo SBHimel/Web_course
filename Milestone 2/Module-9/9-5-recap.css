@@ -288,24 +288,35 @@ input::placeholder {
 }
 
 /* responsive media quary */
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
 @media screen and (max-width: 576px) {
     .skills-conteiner,
     .resume-container,
     footer,
     .about-items,
-    .banner {
+    .banner,
+    nav,
+    nav > ul {
         flex-direction: column;
+    }
+    nav > ul{
+        gap: 20px;
     }
 
     .banner{
         margin: 20px;
     }
+    .banner-profile-pic{
+        width: 100%;
+    }
     .header{
         background-image: none;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
     }
 
     footer,
@@ -313,6 +324,13 @@ input::placeholder {
         padding: 20px
     }
     .footer-column{
-        width: calc(100% - 20%);
+        width: calc(100% - 10%);
+    }
+}
+/* tablet specific media query */
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    .banner{
+        flex-direction: column;
     }
 }
