@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dev challeng 1st</title>
+    <style>
+    body {
+        background-image: url(simple-feature-section-master/resources/Background_image@2x.png); /* ব্যাকগ্রাউন্ড ছবি */
+        background-color: rgba(4, 46, 136, 0.6); /* ছবির ওপর রঙ */
+        background-blend-mode: darken; /* রঙ + ছবি মিশিয়ে দেয় */
+        background-size: cover; /* পুরো স্ক্রিন ঢেকে রাখে */
+        background-position: center; /* ছবি মাঝ থেকে শুরু হয় */
+        background-repeat: no-repeat; /* রিপিট হতে দেয় না */
+        color: white; /* সব টেক্সট সাদা */
+    }
+
+    .first{
+        text-align: center; /* টেক্সট center */
+        font-size: larger; 
+        padding-bottom: 40px;
+    }
+
+    .all{
+        background-color: rgba(4, 46, 136, 0.25); /* কার্ডের ব্যাকগ্রাউন্ড */
+        border-radius: 14px; /* কার্ড গোলাকার */
+        width: 100%; /* ছোট স্ক্রিনে ফুল width */
+        max-width: 350px; /* বড় স্ক্রিনে 350px */
+        padding: 16px; /* ভিতরের স্পেস */
+    }
+
+    p{
+        color: rgba(255, 255, 255, 0.7); /* paragraph এর হালকা সাদা রঙ */
+    }
+
+    img{
+        border-radius: 18px; /* ছবি গোলাকার */
+        margin-bottom: 16px; /* ছবির নিচে স্পেস */
+    }
+
+    .pic{
+        width: 100%; /* নিচের ছবি কার্ডের 100% */
+    }
+
+    .box-1{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .h1{
+        padding: 14px;
+    }
+
+    /* -------- GRID SYSTEM (Desktop) -------- */
+    main{
+        display: grid; /* Grid চালু */
+        grid-template-columns: repeat(3, 1fr); /* Desktop এ 3 column */
+        gap: 40px; /* item এর মাঝখানে gap */
+        justify-items: center; /* সব ব্লককে center এ রাখে */
+    }
+
+    /* -------- TABLET VIEW -------- */
+    @media screen and (min-width: 576px) and (max-width: 990px) {
+        
+        main{
+            grid-template-columns: repeat(2, 1fr); /* Tablet এ 2 column রাখে */
+            gap: 40px;
+            justify-items: center; /* সব item center এ */
+        }
+
+        main section:nth-child(3){
+            grid-column: 1 / 3;   /* 3rd ব্লক দুই কলাম জুড়ে থাকবে */
+            justify-self: center; /* ব্লকটি মাঝখানে থাকবে */
+        }
+    }
+
+    /* -------- MOBILE VIEW -------- */
+    @media screen and (max-width:576px) {
+        main{
+            grid-template-columns: 1fr; /* Mobile এ 1 column */
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+    <header>
+        <section class="first">
+            <div class="big">
+                <h1>Quality feedbacks for <br> your SaaS products</h1>
+                <p>The blocks & component you need</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="all">
+            <div class="box-1">
+                <img src="simple-feature-section-master/resources/favicon.ico" alt="">
+                <h2>Collect Feedback at Multiple <br>Tuchpoint</h2>
+                <p>Provide at comprehansive <br>undestandin of the customer <br>experience</p>
+                <img class="pic" src="simple-feature-section-master/resources/photo_2.png" alt="">
+            </div>
+        </section>
+
+        <section class="all">
+            <div class="box-1">
+                <img src="simple-feature-section-master/resources/favicon.ico" alt="">
+                <h2>Collect Feedback at Multiple <br>Tuchpoint</h2>
+                <p>Provide at comprehansive <br>undestandin of the customer <br>experience</p>
+                <img class="pic" src="simple-feature-section-master/resources/photo_1.png" alt="">
+            </div>
+        </section>
+
+        <section class="all">
+            <div class="box-1 samiya">
+                <img src="simple-feature-section-master/resources/favicon.ico" alt="">
+                <h2>Collect Feedback at Multiple <br>Tuchpoint</h2>
+                <p>Provide at comprehansive <br>undestandin of the customer <br>experience</p>
+                <img class="pic" src="simple-feature-section-master/resources/photo_3.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
