@@ -1,9 +1,336 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.work-sans-font{
+.work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+
+/* shared styles */
+
+
+.display-flex {
+  display: flex;
+}
+
+.text-primary {
+  color: rgba(255, 144, 14, 1);
+}
+
+/* dark 02 */
+.text-grey {
+  color: rgba(66, 66, 66, 1);
+}
+
+/* dark 03 */
+.text-light-gray {
+  color: rgba(114, 114, 114, 1);
+
+}
+
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary {
+  background-color: rgba(255, 144, 14, 1);
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  /* border: none; */
+  border: 3px solid rgb(177, 175, 72);
+  /* background এর সাথে same color */
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main>section {
+  margin-top: 130px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+
+
+/* header styles */
+
+
+/* navbar related styles */
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 2.8rem;
+  /* px → মনে করো “ইংরেজি ruler” → fixed thake সবসময় ঠিক 1cm */
+  /* rem → মনে করো “প্রধান ruler” (root) → যদি মূল ruler বড় করা হয়, সবই proportionally বড় হয় */
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* উপরে,নিচে ০ ডানে,বামে ভাগাভাগি করে নেওয়ার জন্য */
+}
+
+/* banner related styles */
+
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-title {
+  font-weight: 700;
+  /* 700 = bold */
+  font-size: 4rem;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+/* team and feature related style */
+
+
+.teams {
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+#quick-list {
+  font-weight: 500;
+}
+
+/* features section related styles */
+
+
+.features {
+  gap: 130px;
+}
+
+#feature-section-title {
+  border-left: 5px solid rgba(255, 144, 14, 1);
+  padding-left: 20px;
+}
+
+.feature-card {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#experience-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -82px;
+  margin-top: -100px;
+}
+
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.feature-architect img {
+  width: 100%;
+}
+
+/* some facts related styles */
+
+
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card {
+  border: 1px solid rgba(255, 144, 14, 1);
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.fact-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.fact-description {
+  max-width: 540px;
+}
+
+/* sponsor ralated device */
+.sponsor-info {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponsor-companies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-companies img {
+  filter: grayscale(100%);
+  /* Makes the image black and white */
+}
+
+/* Footer style */
+
+.finish-line {
+  background-color: rgba(255, 244, 231, 1);
+  width: 100%;
+  max-width: 1440px;
+
+  padding: 30px 20px;
+  margin: 100px auto;
+
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+
+  .navbar,
+  .nav-links,
+  .features,
+  .teams {
+    flex-direction: column;
+  }
+
+  .team-img-container,
+  .facts-container,
+  .sponsor-companies {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .facts-container {
+    justify-items: center;
+    gap: 24px;
+  }
+
+  .sponsor-companies {
+    justify-items: center;
+    gap: 50px;
+  }
+
+  .our-features {
+    margin-left: 20px;
+  }
+
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .finish-line {
+    margin-right: 0px;
+  }
+
+  .finish-line {
+    /* padding: 20px 10px;
+    font-size: 0.9rem; */
+    box-sizing: border-box;
+    /*box-sizing: border-box; Element এর width + height এর মধ্যে padding ও border ধরা হয়।মানে, total size fixed থাকে, layout ভাঙে না। */
+  }
+
+}
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+  .teams,
+  .features {
+    flex-direction: column;
+  }
+
+  .our-features {
+    margin: 50px auto;
+  }
+
+  .sponsor-companies {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
+
+  }
+
+  .facts-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    justify-items: center;
+  }
+
+  .facts-container> :last-child {
+    grid-column: 2;
+    /* center column */
+    /* :last-child ব্যবহার করা হয় container এর শুধু শেষ item কে আলাদা করে style দিতে। */
+  }
+
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 280px;
+  }
 }
