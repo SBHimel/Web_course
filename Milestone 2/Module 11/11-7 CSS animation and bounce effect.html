@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes Himel {
+            from{
+                left: 0;
+            }
+            to{
+                left: 600px;
+                background-color: red;
+            }
+        }
+        @keyframes bounce {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                left: 150px;
+                top: 200px;
+                background-color: #FACE68;
+            }
+            50%{
+                left: 300px;
+                top: 0px;
+                background-color: #FAAC68;
+            }
+            75%{
+                left: 470px;
+                top: 200px;
+                background-color: #FA6868;
+            }
+            100%{
+                left: 650px;
+                top: 0px;
+                background-color:purple;
+            }
+        }
+        .stage{
+            width: 750px;
+            height: 300px;
+            background-color: aqua;
+            border: 2px solid steelblue;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: relative;
+            /* animation: Himel 2s ease-in-out 1s infinite alternate; */
+
+            animation: bounce 3s ease-in-out 1s infinite alternate
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Animation</h2>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
