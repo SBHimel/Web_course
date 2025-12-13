@@ -1,0 +1,319 @@
+/* Quicksand font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Raleway font */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.raleway-font {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* background image */
+
+body {
+    background-image: url(assets/bg.png);
+}
+
+
+/* Shared style */
+.display-flex {
+    display: flex;
+}
+
+.orange {
+    color: orange;
+}
+
+.skyblou {
+    color: skyblue;
+}
+
+.sky {
+    color: rgba(5, 212, 223, 1);
+}
+
+.beguni {
+    color: rgba(93, 88, 239, 1);
+}
+
+.btn {
+    background-color: black;
+    border-radius: 12px;
+    width: 156px;
+    height: 50px;
+    color: white;
+}
+
+/* header style */
+
+
+header,
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* nav design */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.school {
+    margin-left: 11px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.navlink {
+    gap: 32px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-btn {
+    border-radius: 12px;
+    width: 197px;
+    height: 50px;
+    background-color: orange;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+/* Banner style */
+
+.banner-title {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.banner-description {
+    font-size: 20px;
+}
+
+.banner-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-end {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* three image design */
+
+
+.title {
+    font-size: 46px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.box-descripti {
+    font-weight: 500px;
+    font-size: 16px;
+    color: rgba(128, 128, 128, 1);
+    text-align: center;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.first {
+    color: rgba(100, 200, 255, 1);
+}
+
+.second {
+    color: rgba(240, 170, 0, 1);
+}
+
+.third {
+    color: rgba(135, 0, 255, 1);
+}
+
+.sta {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.all-box {
+    gap: 29px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+}
+
+.box {
+    border-radius: 19px;
+    /* border: 2px solid black; */
+    max-width: 367px;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* up–down */
+    align-items: center;
+}
+
+.linear-one {
+    background: linear-gradient(to bottom,
+            rgba(222, 245, 255, 1) 0%,
+            white 40%,
+            white 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.linear-two {
+    background: linear-gradient(to bottom,
+            rgba(255, 244, 220, 1) 0%,
+            white 40%,
+            white 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.linear-three {
+    background: linear-gradient(to bottom,
+            rgba(242, 232, 255, 1) 0%,
+            white 40%,
+            white 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    gap: 10px;
+}
+
+
+/* Our stories */
+
+.our {
+    margin-top: 100px;
+}
+
+
+/* p er somossa somadhaner jonno   */
+
+
+@media screen and (min-width: 576px) and (max-width: 1252px) {
+    .hide {
+        display: none;
+    }
+}
+
+/* Mobile device */
+
+@media screen and (max-width: 576px) {
+
+
+
+    /* navbar */
+
+    .underline {
+    position: absolute;   /* parent থেকে independent mane karor vitore na theke kaj kora .*/
+    margin-top: 20px;
+    left: 0; 
+    width: 100%;
+    background-color: rgba(254, 163, 1, 1);
+    height: 2px;
+    
+}
+
+    .nav-hide,
+    .hide-btn {
+        display: none;
+    }
+
+    .navbar {
+        margin-left: -90px;
+        margin-right: -90px;
+    }
+
+    .mobile-btn {
+        display: inline-block;
+        width: 50px;
+    }
+
+    /* banner */
+    .banner-container {
+        flex-direction: column-reverse;
+        margin-top: 70px;
+    }
+
+    .banner {
+        text-align: center;
+    }
+
+    .banner-title br,
+    .banner-description br {
+        display: none;
+        /* normal line break */
+    }
+
+    .banner-title {
+        font-size: 32px;
+    }
+
+    .banner-description {
+        font-size: 14px;
+    }
+
+    /* 3 pic  */
+    .title {
+        font-size: 26px;
+    }
+
+    .all-box {
+        gap: 29px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .box {
+        width: 357px;
+        height: 370px;
+
+    }
+    .bar{
+        display: none;
+    }
+}
