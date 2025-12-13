@@ -18,7 +18,9 @@
      font-style: normal;
  }
 
+ 
  /* shared style */
+
  .display-flex {
      display: flex;
      flex-wrap: wrap;
