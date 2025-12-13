@@ -215,6 +215,17 @@ screen ছোট–বড় হলেই দুইটিই responsive থাক�
  .influ-desciption {
      color: rgba(217, 219, 225, 1);
  }
+ .see{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    color: rgb(235, 7, 7);
+ }
+ .more{
+    width: 16px;
+    height: 10px;
+ }
 
  @media screen and (max-width: 576px) {
 
@@ -255,6 +266,10 @@ screen ছোট–বড় হলেই দুইটিই responsive থাক�
          align-content: center;
          margin: 20 auto;
          height: 250px;
+     }
+     .see{
+        justify-content: center;
+        margin-left: 230px;
      }
 
      /* all box pic  */
@@ -324,5 +339,8 @@ screen ছোট–বড় হলেই দুইটিই responsive থাক�
          grid-template-columns: 1fr;
          text-align: center;
      }
-
+     .see{
+        justify-content: center;
+        margin-left: 230px;
+     }
  }
