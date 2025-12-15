@@ -18,7 +18,13 @@
      font-style: normal;
  }
 
- 
+ /* body */
+
+ body {
+    margin: 0; /* browser er default body margin remove করার জন্য coding shuru korar age sobsomoy eta diye shuru kora ucit */
+}
+
+
  /* shared style */
 
  .display-flex {
