@@ -60,6 +60,11 @@ body {
     height: 50px;
     color: white;
 }
+.btn:hover {
+    background-color: #45a049;
+    cursor: pointer;
+    /*  হাতের কার্সর হবে */
+}
 
 /* header style */
 
@@ -109,6 +114,11 @@ main {
     font-size: 20px;
     font-weight: 600;
     padding: 10px;
+}
+.nav-btn:hover {
+    background-color: #45a049;
+    cursor: pointer;
+    /*  হাতের কার্সর হবে */
 }
 
 .mobile-btn {
